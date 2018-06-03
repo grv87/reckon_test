@@ -1,8 +1,11 @@
 plugins {
   id 'org.ajoberstar.reckon' version '0.7.0'
+  id 'lifecycle-base'
 }
 
 reckon {
   scopeFromProp()
   stageFromProp('milestone', 'rc', 'final')
 }
+
+println version.toString()
